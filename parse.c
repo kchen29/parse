@@ -43,6 +43,7 @@ int main() {
   args[2] = "-l";
   args[3] = NULL;
   */
+  //don't need to free memory because execvp replaces process
   execvp(args[0], args);
   
   return 0;
